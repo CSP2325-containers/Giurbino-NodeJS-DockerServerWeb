@@ -1,0 +1,15 @@
+{
+    "name": "my-nodejs-app",
+    "version": "1.0.0",
+    "description": "Esempio di app Node.js con metodi GET e POST",
+    "main": "main.js",
+    "scripts": {
+      "start": "node main.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2"
+    },
+    "engines": {
+      "node": "^18.0.0"
+    }
+  }

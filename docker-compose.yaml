@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nodejs_web_server_giurbino
+    ports:
+      - "3000:3000" # Espone la porta 3000 per l'applicazione
+    volumes:
+      - .:/app # Monta la directory locale nel container
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
